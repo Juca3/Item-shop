@@ -89,6 +89,8 @@
     <div class="container">
         <h1>Vendas no Mercado Livre</h1>
         <button class="search-button" onclick="searchYouTube()">Pesquisar</button>
+        <br><br>
+        <button class="search-button" onclick="search()">Negócios</button>
         
         <!-- Container para tópicos de estudo -->
         <div class="study-topics">
@@ -120,6 +122,11 @@
             const query = "como vender no Mercado Livre";
             const youtubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
             window.open(youtubeSearchURL, '_blank');
+        }
+
+        function search() {
+            window.open('https://www.youtube.com/watch?v=I8jc0ZfYZ50', '_blank');
+            window.open('https://www.youtube.com/watch?v=4EcRDAf0G0o', '_blank');
         }
 
         // Função para salvar as anotações no localStorage
