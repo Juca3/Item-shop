@@ -86,10 +86,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Vendas no Mercado Livre</h1>
+        <h1>Vendas</h1>
+        
+        <br>
+
         <button class="search-button" onclick="searchYouTube()">Pesquisar</button>
-        <br><br>
         <button class="search-button" onclick="search()">Negócios</button>
+        <button class="search-button" onclick="searchProject()">Projetos</button>
+        <button class="search-button" onclick="searchComprar()">Comprar</button>
+        <button class="search-button" onclick="searchPagar()">Pagar</button>
+        <button class="search-button" onclick="searchPC()">PC</button>
+
+        <br>
         
         <!-- Container para tópicos de estudo -->
         <div class="study-topics">
@@ -107,6 +115,8 @@
                 <li><a href="#">Editar Imagens e Vídeos</a></li>
             </ul>
         </div>
+
+        <br>
 
         <!-- Container para anotações -->
         <div class="notes-container">
@@ -126,6 +136,24 @@
         function search() {
             window.open('https://www.youtube.com/watch?v=I8jc0ZfYZ50', '_blank');
             window.open('https://www.youtube.com/watch?v=4EcRDAf0G0o', '_blank');
+        }
+
+        function searchComprar() {
+            window.open('comprar/', '_blank');
+        }
+        
+        function searchProject() {
+            window.open('https://www.google.com.br/search?q=raspberry+pi+ov5648+5mp+usb+camera+module&sca_esv=43a9cf8e007740e6&authuser=4&sxsrf=ADLYWIL3AQ2DDBcQk50uA8UeQmQCWfq0MA%3A1731033259712&source=hp&ei=q3gtZ67gKMWB5OUP6O7E8QY&iflsig=AL9hbdgAAAAAZy2Gu9iapKTCf7WMxItS90sOamUOGpBZ&oq=&gs_lp=Egdnd3Mtd2l6IgAqAggAMgcQIxgnGOoCMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhMQABgDGOUCGMcDGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQLhgDGOUCGOoCGIwDGI8BSL4OUABYAHABeACQAQCYAQCgAQCqAQC4AQHIAQCYAgGgAiCoAgqYAyCSBwExoAcA&sclient=gws-wiz', '_blank');
+            window.open('https://produto.mercadolivre.com.br/MLB-3416846460-monitor-touch-7-polegadas-para-raspberry-pi3-e-pi4-1024x600-_JM#polycard_client=bookmarks', '_blank');
+            window.open('https://www.mercadolivre.com.br/raspberry-model-b-pi4-placa-de-microcontrolador/p/MLB32586369#polycard_client=bookmarks&wid=MLB3716906655&sid=bookmarks', '_blank');
+        }
+        
+        function searchPagar() {
+            window.open('pagar/', '_blank');
+        }
+
+        function searchPC() {
+            window.open('pc/', '_blank');
         }
 
         // Função para salvar as anotações no localStorage
