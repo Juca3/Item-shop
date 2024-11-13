@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>Pagar</title>
+    <title>Projetos</title>
     <style>
         body {
             margin: 0;
@@ -21,40 +21,69 @@
             height: 100vh; /* Faz o main ocupar toda a altura da tela */
         }
 
-        textarea {
-            width: 80%;
-            height: 50%;
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px;
-            resize: none; /* Impede o redimensionamento */
-            border-radius: 5px;
-            font-size: 16px;
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Deixa os botões em uma coluna */
+            justify-content: center;
+            align-items: center;
         }
 
-        textarea:focus {
-            outline: none; /* Remove o contorno padrão ao focar */
-            background-color: #444;
+        .button {
+            background-color: #5ffce7; /* Cor de fundo dos botões */
+            border: none;
+            color: black;
+            padding: 20px 40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            width: 200px;
+            border-radius: 5px; /* Borda arredondada */
+            transition: background-color 0.3s ease;
+        }
+
+        .button2 {
+            background-color: #5ffce7; /* Cor de fundo dos botões */
+            border: none;
+            color: black;
+            padding: 60px 40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            width: 200px;
+            border-radius: 5px; /* Borda arredondada */
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #25fadd; /* Efeito ao passar o mouse */
         }
     </style>
 </head>
 <body>
+    
     <main>
-        <textarea id="autoSave" placeholder="Digite aqui..."></textarea>
-    </main>
+        <div class="button-container">
+            <button class="button" onclick="buttonClick('https://pt.aliexpress.com/item/1005007384138708.html?src=google&pdp_npi=4%40dis%21BRL%21118.70%21106.50%21%21%21%21%21%40%2112000040523041635%21ppc%21%21%21&src=google&albch=shopping&acnt=768-202-3196&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=pt1005007384138708&ds_e_product_merchant_id=106876987&ds_e_product_country=BR&ds_e_product_language=pt&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=21106536414&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gclid=EAIaIQobChMIoc-0ra_NiQMVmCFECB3KQhreEAYYAiABEgKb5PD_BwE', 'https://www.google.com.br/search?q=raspberry+pi+ov5648+5mp+usb+camera+module&sca_esv=43a9cf8e007740e6&authuser=4&sxsrf=ADLYWIL3AQ2DDBcQk50uA8UeQmQCWfq0MA%3A1731033259712&source=hp&ei=q3gtZ67gKMWB5OUP6O7E8QY&iflsig=AL9hbdgAAAAAZy2Gu9iapKTCf7WMxItS90sOamUOGpBZ&oq=&gs_lp=Egdnd3Mtd2l6IgAqAggAMgcQIxgnGOoCMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhMQABgDGOUCGMcDGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQABgDGOUCGOoCGIwDGI8BMhAQLhgDGOUCGOoCGIwDGI8BSL4OUABYAHABeACQAQCYAQCgAQCqAQC4AQHIAQCYAgGgAiCoAgqYAyCSBwExoAcA&sclient=gws-wiz', 'https://produto.mercadolivre.com.br/MLB-3416846460-monitor-touch-7-polegadas-para-raspberry-pi3-e-pi4-1024x600-_JM#polycard_client=bookmarks', 'https://www.mercadolivre.com.br/raspberry-model-b-pi4-placa-de-microcontrolador/p/MLB32586369#polycard_client=bookmarks&wid=MLB3716906655&sid=bookmarks')">Painel</button>
+            <button class="button" onclick="buttonClick('https://produto.mercadolivre.com.br/MLB-4665366036-lmpada-de-projetor-com-ventilador-de-holograma-3d-p50-wifi-_JM#polycard_client=bookmarks', 'https://www.mercadolivre.com.br/cmera-de-seguranca-rezzet-lmpada-ip-wifi-com-viso-noturna-interna-externa-app-yoosee-espi-360-cor-branco/p/MLB28574077#cart_referer=see-other-offers', 'https://www.mercadolivre.com.br/cabo-adaptador-conversor-usb-para-hdmi-usb-30/p/MLB23159572#cart_referer=see-other-offers')">Bike</button>
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="buttonClick('https://produto.mercadolivre.com.br/MLB-3416846460-monitor-touch-7-polegadas-para-raspberry-pi3-e-pi4-1024x600-_JM#polycard_client=bookmarks', 'https://www.mercadolivre.com.br/raspberry-model-b-pi4-placa-de-microcontrolador/p/MLB32586369#polycard_client=bookmarks&wid=MLB3716906655&sid=bookmarks')">Kart</button>
+            <button class="button" onclick="buttonClick('https://produto.mercadolivre.com.br/MLB-4665366036-lmpada-de-projetor-com-ventilador-de-holograma-3d-p50-wifi-_JM#polycard_client=bookmarks', 'https://www.mercadolivre.com.br/cmera-de-seguranca-rezzet-lmpada-ip-wifi-com-viso-noturna-interna-externa-app-yoosee-espi-360-cor-branco/p/MLB28574077#cart_referer=see-other-offers', 'https://www.mercadolivre.com.br/cabo-adaptador-conversor-usb-para-hdmi-usb-30/p/MLB23159572#cart_referer=see-other-offers')">Moto</button>
+        </div>
+        <!-- Último botão fora dos contêineres -->
+        <button class="button2" onclick="buttonClick('https://produto.mercadolivre.com.br/MLB-4038004586-barra-w-120-tubular-6kg-anilhas-presilhas-musculaco-treino-_JM?variation=179883412815')">Klaton</button>
+    </main>    
 
     <script>
-        // Recupera o valor salvo do armazenamento local ao carregar a página
-        document.addEventListener('DOMContentLoaded', () => {
-            const textarea = document.getElementById('autoSave');
-            textarea.value = localStorage.getItem('savedText') || '';
-            
-            // Salva o conteúdo do textarea no armazenamento local sempre que muda
-            textarea.addEventListener('input', () => {
-                localStorage.setItem('savedText', textarea.value);
+        function buttonClick(...urls) {
+            urls.forEach(url => {
+                window.open(url, '_blank'); // Abre cada URL em uma nova aba
             });
-        });
+        }
     </script>
 </body>
 </html>
