@@ -124,6 +124,9 @@
             <h2>Anotações</h2>
             <textarea id="notes" placeholder="Digite suas anotações aqui..."></textarea>
         </div>
+
+        <button class="search-button" onclick="searchMeli()" style="width: 800px; height: 50px; margin-top: 20px;">Mercado Livre</button>
+        
     </div>
 
     <script>
@@ -157,6 +160,12 @@
 
         function searchPC() {
             window.open('pc/', '_blank');
+        }
+
+        function searchMeli() {
+            window.open('https://www.mercadolivre.com.br/', '_blank');
+            window.open('https://www.mercadolivre.com.br/mais-vendidos#menu=categories', '_blank');
+            window.open('https://www.mercadolivre.com.br/impressora-elgin-i9-guilhotina-ethernet-rede-cor-preto-bivolt/p/MLB20719892#reco_item_pos=4&reco_backend=item_decorator&reco_backend_type=function&reco_client=home_items-decorator-legacy&reco_id=f1abc764-06dc-4c80-8319-d0a082aa6f6c&reco_model=&c_id=/home/navigation-trends-recommendations/element&c_uid=950f88ca-d168-405e-8584-ed078a1d661a&da_id=navigation_trend&da_position=2&id_origin=/home/dynamic_access&da_sort_algorithm=ranker', '_blank');
         }
 
         // Função para salvar as anotações no localStorage
